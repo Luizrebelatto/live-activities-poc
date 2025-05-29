@@ -18,6 +18,8 @@
 		299DE1112DE6AC4F00ACB585 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 299DE1102DE6AC4F00ACB585 /* Assets.xcassets */; };
 		299DE1152DE6AC4F00ACB585 /* Live ActivityExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 299DE1022DE6AC4E00ACB585 /* Live ActivityExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		299DE11A2DE6AC9C00ACB585 /* Live_ActivityLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299DE10A2DE6AC4E00ACB585 /* Live_ActivityLiveActivity.swift */; };
+		299DE11C2DE6B3B200ACB585 /* LiveActivityModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299DE11B2DE6B3B200ACB585 /* LiveActivityModule.swift */; };
+		299DE11E2DE7D76000ACB585 /* RCTLiveActivityModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 299DE11D2DE7D75F00ACB585 /* RCTLiveActivityModule.m */; };
 		3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */; };
 		6925F0E761AD24869F4A4752 /* libPods-liveactivitiespoc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CB16D199457534879E7AAB7 /* libPods-liveactivitiespoc.a */; };
 		BB2F792D24A3F905000567C9 /* Expo.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB2F792C24A3F905000567C9 /* Expo.plist */; };
@@ -64,6 +66,9 @@
 		299DE10E2DE6AC4E00ACB585 /* AppIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIntent.swift; sourceTree = "<group>"; };
 		299DE1102DE6AC4F00ACB585 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		299DE1122DE6AC4F00ACB585 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		299DE11B2DE6B3B200ACB585 /* LiveActivityModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveActivityModule.swift; sourceTree = "<group>"; };
+		299DE11D2DE7D75F00ACB585 /* RCTLiveActivityModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCTLiveActivityModule.m; sourceTree = "<group>"; };
+		299DE11F2DE7D77B00ACB585 /* nativeModules-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "nativeModules-Bridging-Header.h"; sourceTree = "<group>"; };
 		6CB16D199457534879E7AAB7 /* libPods-liveactivitiespoc.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-liveactivitiespoc.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7639863920802607312ABABE /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; name = PrivacyInfo.xcprivacy; path = liveactivitiespoc/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SplashScreen.storyboard; path = liveactivitiespoc/SplashScreen.storyboard; sourceTree = "<group>"; };
@@ -132,6 +137,9 @@
 			isa = PBXGroup;
 			children = (
 				299DE1082DE6AC4E00ACB585 /* Live_ActivityBundle.swift */,
+				299DE11B2DE6B3B200ACB585 /* LiveActivityModule.swift */,
+				299DE11D2DE7D75F00ACB585 /* RCTLiveActivityModule.m */,
+				299DE11F2DE7D77B00ACB585 /* nativeModules-Bridging-Header.h */,
 				299DE10A2DE6AC4E00ACB585 /* Live_ActivityLiveActivity.swift */,
 				299DE10C2DE6AC4E00ACB585 /* Live_Activity.swift */,
 				299DE10E2DE6AC4E00ACB585 /* AppIntent.swift */,
@@ -419,6 +427,8 @@
 			files = (
 				F11748422D0307B40044C1D9 /* AppDelegate.swift in Sources */,
 				299DE11A2DE6AC9C00ACB585 /* Live_ActivityLiveActivity.swift in Sources */,
+				299DE11E2DE7D76000ACB585 /* RCTLiveActivityModule.m in Sources */,
+				299DE11C2DE6B3B200ACB585 /* LiveActivityModule.swift in Sources */,
 				1EA47B8A6E76BD30B35D92ED /* ExpoModulesProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -549,6 +559,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "nativeModules-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -593,6 +604,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "nativeModules-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
